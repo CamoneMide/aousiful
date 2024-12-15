@@ -15,7 +15,7 @@
     <nav
       class="text-[#369536] flex flex-row justify-between items-center leading-[67px] px-10 py-[10px] navTrans" id="nav"
     >
-      <h2 class="text-[32px] font-normal flex items-center carterOneF">
+      <a href="#home" class="text-[32px] font-normal flex items-center carterOneF">
         Aousiful<span class=""
           ><img
             width="35"
@@ -23,33 +23,33 @@
             src="/src/assets/images/Frame 167.png"
             alt="logo"
         /></span>
-      </h2>
+      </a>
       <div class="hidden interF lg:flex">
-        <a href="#home" class="text-[20px] font-[500] px-[16px] scroll-link">Home</a>
-        <a href="#aboutUs" class="text-[20px] font-[500] px-[16px] scroll-link">About Us</a>
-        <a href="#properties" class="text-[20px] font-[500] px-[16px] scroll-link"
+        <a href="#home" class="text-[20px] font-[500] px-[10px] mr-[16px] hover:mx-[8px] navLink scroll-link">Home</a>
+        <a href="#aboutUs" class="text-[20px] font-[500] px-[10px] mr-[16px] hover:mx-[8px] navLink scroll-link">About Us</a>
+        <a href="#properties" class="text-[20px] font-[500] px-[10px] mr-[16px] hover:mx-[8px] navLink scroll-link"
           >Properties</a
         >
-        <a href="#services" class="text-[20px] font-[500] px-[16px] scroll-link"
+        <a href="#services" class="text-[20px] font-[500] px-[10px] mr-[16px] hover:mx-[8px] navLink scroll-link"
           >Services</a
         >
-        <a href="#contact" class="text-[20px] font-[500] px-[16px] scroll-link">Contact</a>
+        <a href="#contact" class="text-[20px] font-[500] px-[10px] mr-[16px] hover:mx-[8px] navLink scroll-link">Contact</a>
       </div>
       <div class="flex items-center">
         <div class="hidden interF md:block">
           <a
             href=""
-            class="text-[20px] font-[500] px-[26px] py-[13px] bg-[#369536] text-[#FDFDF3] rounded-[15px] border-[#369536] border-[1px] mr-[10px]"
+            class="text-[20px] font-[500] px-[26px] py-[13px] bg-[#369536] text-[#FDFDF3] rounded-[15px] border-[#369536] border-[1px] mr-[10px] cursor-pointer hover:bg-[transparent] navTrans hover:text-[#369536]"
             >Sign Up</a
           >
           <a
             href=""
-            class="ml-[10px] text-[20px] font-[500] px-[26px] py-[13px] border-[#369536] text-[#369536] rounded-[15px] border-[1px]"
+            class="ml-[10px] text-[20px] font-[500] px-[26px] py-[13px] border-[#369536] text-[#369536] rounded-[15px] border-[1px] cursor-pointer hover:text-[#FDFDF3] navTrans hover:bg-[#369536e6]"
             >Sign In</a
           >
         </div>
         <div
-          class="flex lg:hidden r-0 md:ml-[24px] text-[40px] font-[500] px-[8px] py-[5px] border-[1px] border-[rgba(54,149,54,0.4)] text-[#369536] rounded-[6px] navTogBtn"
+          class="flex lg:hidden r-0 md:ml-[24px] text-[40px] font-[500] px-[8px] py-[5px] border-[1px] border-[rgba(54,149,54,0.6)] text-[#369536] rounded-[6px] navTogBtn hover:bg-[rgb(54,149,54)] hover:text-[#FDFDF3] navTrans"
         >
           <i class="bx bx-menu"></i>
         </div>
@@ -71,7 +71,7 @@
     <!-- Sections -->
     <section class="px-5 lg:px-10 lg:py-[60px] py-10" id="home">
       <div
-        class="relative grid grid-cols-1 gap-[60px] lg:gap-5 lg:grid-cols-2 interF"
+        class="grid grid-cols-1 gap-[60px] lg:gap-5 lg:grid-cols-2 interF"
       >
         <div class="flex flex-col">
           <h2
@@ -87,7 +87,7 @@
             support team by your side, finding your next home is simple and
             stress free.
           </p>
-          <div class="flex flex-row items-center justify-start">
+          <div class="flex flex-row items-center justify-start mt-5 md:mt-[0px]">
             <div
               class="relative flex flex-row items-center justify-start w-full"
             >
@@ -118,7 +118,7 @@
               />
             </div>
             <div
-              class="text-[#FF8C00] hidden md:flex flex-row text-[22px] lg:-ml-[420px] md:-ml-[530px]"
+              class="text-[#FF8C00] hidden md:flex flex-row text-[22px] lg:-ml-[390px] md:-ml-[530px]"
             >
               <i class="bx bxs-star"></i>
               <i class="bx bxs-star"></i>
@@ -134,34 +134,131 @@
             </p>
           </div>
         </div>
-        <div class="h-full w-full rounded-[20px]">
-          <img
-            src="/src/assets/images/home-showcase1.jpg"
-            alt="showcase"
-            class="w-full h-full rounded-[20px]"
-          />
+
+        <div class="relative overflow-hidden h-full lg:h-[551px] w-full flex">
+          
+          <div class="h-full absolute w-full rounded-[20px] overflow-hidden navTrans imgSlide">
+            <img
+              src="/src/assets/images/home-showcase1.jpg"
+              alt="showcase"
+              class="w-full h-full rounded-[20px] hover:scale-[1.2] imgTrans"
+            />
+          </div>
+          <div class="h-full absolute w-full rounded-[20px] overflow-hidden navTrans imgSlide">
+            <img
+              src="/src/assets/images/home-showcase13.jpg"
+              alt="showcase"
+              class="w-full h-full rounded-[20px] hover:scale-[1.2] imgTrans"
+            />
+          </div>
+          <div class="h-full absolute w-full rounded-[20px] overflow-hidden navTrans imgSlide">
+            <img
+              src="/src/assets/images/home-showcase14.jpg"
+              alt="showcase"
+              class="w-full h-full rounded-[20px] hover:scale-[1.2] imgTrans"
+            />
+          </div>
+          <div class="h-full absolute w-full rounded-[20px] overflow-hidden navTrans imgSlide">
+            <img
+              src="/src/assets/images/home-showcase15.jpg"
+              alt="showcase"
+              class="w-full h-full rounded-[20px] hover:scale-[1.2] imgTrans"
+            />
+          </div>
+          <div class="h-full absolute w-full rounded-[20px] overflow-hidden navTrans imgSlide">
+            <img
+              src="/src/assets/images/home-showcase16.jpg"
+              alt="showcase"
+              class="w-full h-full rounded-[20px] hover:scale-[1.2] imgTrans"
+            />
+          </div>
+          
         </div>
-        <!-- <div class="absolute bottom-0 left-0 translate-y-[96%] flex flex-col">
-          <div class="flex flex-row justify-start interF">
+        
+      </div>
+
+      <div class="relative hidden lg:block">
+        <div class="absolute top-0 left-0 -translate-y-[60%] flex flex-col w-full">
+          <div class="flex flex-row justify-start interF mb-[10px]">
             <button
               type="button"
-              class="px-[26px] py-[10px] bg-[#E4F0DB] text-[#369536] text-[20px] mx-[12px] rounded-[25px]"
+              class="px-[26px] py-[8px] bg-[#E4F0DB] text-[#369536] text-[20px] mx-[12px] rounded-[25px] font-[500]"
             >
               House
             </button>
             <button
               type="button"
-              class="px-[26px] py-[10px] text-[#369536] text-[20px] mx-[12px] rounded-[25px]"
+              class="px-[26px] py-[8px] text-[#369536] text-[20px] mx-[12px] rounded-[25px] font-[500]"
             >
               Service Apartment
             </button>
           </div>
-          <div class="w-full p-40 hsSearch"></div>
-        </div> -->
+          <div class="w-[80%] px-[38px] py-[20px] hsSearch rounded-[30px] flex flex-row justify-between items-center">
+            <div class="flex gap-[40px]">
+              <div class="flex flex-col gap-[17px] border-r-[#000000] border-r-[1px] pr-[40px]">
+                <label class="text-[18px] lg:text-[20px] font-[700] text-[#969191CC]" htmlFor="favLocation">Location</label>
+                <div class="relative flex gap-[17px] flex-row items-center">
+                  <div><img src="/src/assets/icons/locationIcon.png" alt="locationIcon">
+                  </div>
+                  <select name="favLocation" id="favLocation" defaultValue="" required class="bg-[transparent] text-[#6F7B6ED6] text-[22px] lg:text-[24px] font-[700] outline-none border-0 pr-[20px]">
+                    <option value="la">LA, USA</option>
+                    <option value="la">LA, USA</option>
+                    <option value="la">LA, USA</option>
+                    <option value="la">LA, USA</option>
+                    <option value="la">LA, USA</option>
+                  </select>
+                  <div class="absolute right-0 bottom-0 text-[#6F7B6EF2] text-[28px] flex pointer-events-none bg-[#eff5e5]">
+                    <i class='bx bx-chevron-down'></i>
+                  </div>
+                </div>
+              </div>
+
+             <div class="flex flex-col gap-[17px] border-r-[#000000] border-r-[1px] pr-[40px]">
+                <label class="text-[18px] lg:text-[20px] font-[700] text-[#969191CC]" htmlFor="favType">Type</label>
+                <div class="relative flex gap-[17px] flex-row items-center">
+                  <div><img src="/src/assets/icons/houseIcon.png" alt="locationIcon">
+                  </div>
+                  <select name="favType" id="favType" defaultValue="" required class="bg-[transparent] text-[#6F7B6ED6] text-[22px] lg:text-[24px] font-[700] outline-none border-0 pr-[20px]">
+                    <option value="duplex">Duplex</option>
+                    <option value="duplex">Duplex</option>
+                    <option value="duplex">Duplex</option>
+                    <option value="duplex">Duplex</option>
+                    <option value="duplex">Duplex</option>
+                  </select>
+                  <div class="absolute right-0 bottom-0 text-[#6F7B6EF2] text-[28px] flex pointer-events-none bg-[#eff5e5]">
+                    <i class='bx bx-chevron-down'></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-[17px]">
+                <label class="text-[18px] lg:text-[20px] font-[700] text-[#969191CC]" htmlFor="favPrice">Price Range</label>
+                <div class="relative flex gap-[17px] flex-row items-center">
+                  <div><img src="/src/assets/icons/moneyIcon.png" alt="locationIcon">
+                  </div>
+                  <select name="favPrice" id="favPrice" defaultValue="" required class="bg-[transparent] text-[#6F7B6ED6] text-[22px] lg:text-[24px] font-[700] outline-none border-0 pr-[20px]">
+                    <option value="price">$30,000-$120,000</option>
+                    <option value="price">$30,000-$120,000</option>
+                    <option value="price">$30,000-$120,000</option>
+                    <option value="price">$30,000-$120,000</option>
+                    <option value="price">$30,000-$120,000</option>
+                  </select>
+                  <div class="absolute right-0 bottom-0 text-[#6F7B6EF2] text-[28px] flex pointer-events-none bg-[#e8ebd6] backdrop-blur-lg">
+                    <i class='bx bx-chevron-down'></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-[#FDFDF3E5] bg-[#369536] rounded-full flex p-[15px] text-[34px]">
+              <i class='bx bx-search'></i>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="max-w-screen scroller px-5 py-[0px] my-5 lg:px-10">
+    <section class="max-w-screen scroller px-5 py-[0px] mb-5 lg:px-10 lg:mt-20 mt-10">
       <ul class="items-center scroller_inner bg-[#EAF4E8] py-[2px]">
         <li class="w-[100px]">
             <img   src="/src/assets/icons/Frame 178.png" alt="Notion" />
@@ -247,12 +344,44 @@
       <div
         class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[30px] mt-[20px] interF"
       >
-        <div class="h-[100%] w-full rounded-[20px]">
-          <img
-            src="/src/assets/images/home-showcase2.jpg"
-            alt="showcase"
-            class="w-full h-full rounded-[20px] object-cover"
-          />
+        <div class="relative flex w-full h-full lg:h-[600px] overflow-hidden">
+          
+          <div class="h-full absolute w-full rounded-[20px] overflow-hidden navTrans aboutImgSlide">
+            <img
+              src="/src/assets/images/home-showcase2.jpg"
+              alt="showcase"
+              class="w-full h-full rounded-[20px] hover:scale-[1.2] imgTrans"
+            />
+          </div>
+          <div class="h-full absolute w-full rounded-[20px] overflow-hidden navTrans aboutImgSlide">
+            <img
+              src="/src/assets/images/home-showcase17.jpg"
+              alt="showcase"
+              class="w-full h-full rounded-[20px] hover:scale-[1.2] imgTrans"
+            />
+          </div>
+          <div class="h-full absolute w-full rounded-[20px] overflow-hidden navTrans aboutImgSlide">
+            <img
+              src="/src/assets/images/home-showcase18.jpg"
+              alt="showcase"
+              class="w-full h-full rounded-[20px] hover:scale-[1.2] imgTrans"
+            />
+          </div>
+          <div class="h-full absolute w-full rounded-[20px] overflow-hidden navTrans aboutImgSlide">
+            <img
+              src="/src/assets/images/home-showcase19.jpg"
+              alt="showcase"
+              class="w-full h-full rounded-[20px] hover:scale-[1.2] imgTrans"
+            />
+          </div>
+          <div class="h-full absolute w-full rounded-[20px] overflow-hidden navTrans aboutImgSlide">
+            <img
+              src="/src/assets/images/home-showcase20.jpg"
+              alt="showcase"
+              class="w-full h-full rounded-[20px] hover:scale-[1.2] imgTrans"
+            />
+          </div>
+          
         </div>
 
         <div class="flex flex-col">
@@ -298,16 +427,16 @@
           </h4>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-[40px] mt-[60px] gap-[30px] lg:gap-5"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-[40px] mt-[60px] gap-[30px] lg:gap-[24px] w-full"
         >
           <!-- Items -->
           <!-- House1 -->
           <div
             class="font-[700] interF flex flex-col px-[12px] py-[15px] bg-[#F9F9F9] rounded-[12px] hsShadow"
           >
-            <div class="rounded-[12px]">
+            <div class="rounded-[12px] h-[200px] overflow-hidden">
               <img
-                class="w-full h-full rounded-[12px]"
+                class="w-full h-full rounded-[12px] object-cover hover:scale-[1.2] imgTrans"
                 src="/src/assets/images/home-showcase3.jpg"
                 alt="house"
               />
@@ -339,9 +468,9 @@
           <div
             class="font-[700] interF flex flex-col px-[12px] py-[15px] bg-[#F9F9F9] rounded-[12px] hsShadow"
           >
-            <div class="rounded-[12px]">
+            <div class="rounded-[12px] h-[200px] overflow-hidden">
               <img
-                class="w-full h-full rounded-[12px]"
+                class="w-full h-full rounded-[12px] object-cover hover:scale-[1.2] imgTrans"
                 src="/src/assets/images/home-showcase4.jpg"
                 alt="house"
               />
@@ -373,9 +502,9 @@
           <div
             class="font-[700] interF flex flex-col px-[12px] py-[15px] bg-[#F9F9F9] rounded-[12px] hsShadow"
           >
-            <div class="rounded-[12px]">
+            <div class="rounded-[12px] h-[200px] overflow-hidden">
               <img
-                class="w-full h-full rounded-[12px]"
+                class="w-full h-full rounded-[12px] object-cover hover:scale-[1.2] imgTrans"
                 src="/src/assets/images/home-showcase5.jpg"
                 alt="house"
               />
@@ -407,9 +536,9 @@
           <div
             class="font-[700] interF flex flex-col px-[12px] py-[15px] bg-[#F9F9F9] rounded-[12px] hsShadow"
           >
-            <div class="rounded-[12px]">
+            <div class="rounded-[12px] h-[200px] overflow-hidden">
               <img
-                class="w-full h-full rounded-[12px]"
+                class="w-full h-full rounded-[12px] object-cover hover:scale-[1.2] imgTrans"
                 src="/src/assets/images/home-showcase6.jpg"
                 alt="house"
               />
@@ -441,9 +570,9 @@
           <div
             class="font-[700] interF flex flex-col px-[12px] py-[15px] bg-[#F9F9F9] rounded-[12px] hsShadow"
           >
-            <div class="rounded-[12px]">
+            <div class="rounded-[12px] h-[200px] overflow-hidden">
               <img
-                class="w-full h-full rounded-[12px]"
+                class="w-full h-full rounded-[12px] object-cover hover:scale-[1.2] imgTrans"
                 src="/src/assets/images/home-showcase7.jpg"
                 alt="house"
               />
@@ -475,9 +604,9 @@
           <div
             class="font-[700] interF flex flex-col px-[12px] py-[15px] bg-[#F9F9F9] rounded-[12px] hsShadow"
           >
-            <div class="rounded-[12px]">
+            <div class="rounded-[12px] h-[200px] overflow-hidden">
               <img
-                class="w-full h-full rounded-[12px]"
+                class="w-full h-full rounded-[12px] object-cover hover:scale-[1.2] imgTrans"
                 src="/src/assets/images/home-showcase8.jpg"
                 alt="house"
               />
@@ -509,9 +638,9 @@
           <div
             class="font-[700] interF flex flex-col px-[12px] py-[15px] bg-[#F9F9F9] rounded-[12px] hsShadow"
           >
-            <div class="rounded-[12px]">
+            <div class="rounded-[12px] h-[200px] overflow-hidden">
               <img
-                class="w-full h-full rounded-[12px]"
+                class="w-full h-full rounded-[12px] object-cover hover:scale-[1.2] imgTrans"
                 src="/src/assets/images/home-showcase9.jpg"
                 alt="house"
               />
@@ -543,9 +672,9 @@
           <div
             class="font-[700] interF flex flex-col px-[12px] py-[15px] bg-[#F9F9F9] rounded-[12px] hsShadow"
           >
-            <div class="rounded-[12px]">
+            <div class="rounded-[12px] h-[200px] overflow-hidden">
               <img
-                class="w-full h-full rounded-[12px]"
+                class="w-full h-full rounded-[12px] object-cover hover:scale-[1.2] imgTrans"
                 src="/src/assets/images/home-showcase10.jpg"
                 alt="house"
               />
@@ -667,17 +796,17 @@
     <section class="bg-[#EAF4E8]">
       <div class="flex flex-col px-5 py-20 lg:px-10 interF font-[700]">
         <div class="flex flex-row items-center justify-between">
-          <h2 class="text-[44px] lg:text-[48px] leading-[67px] text-[#000000]">
-            Testimonial
+          <h2 class="text-[36px] md:text-[48px] leading-[67px] text-[#000000]">
+            Testimonials
           </h2>
-          <div class="flex flex-row mr-10">
-            <div
+          <div class="flex flex-row mr-4 lg:mr-10">
+            <!-- <div
               class="flex p-[12px] rounded-full border-[1px] border-[#00000080] text-[#00000080] text-[24px] mr-5"
             >
               <i class="bx bx-left-arrow-alt"></i>
-            </div>
+            </div> -->
             <div
-              class="flex p-[12px] rounded-full border-[1px] border-[#00000080] text-[#00000080] text-[24px]"
+              class="flex p-[8px] md:p-[12px] rounded-full border-[1px] border-[#00000080] text-[#00000080] text-[24px] testimonyArrow"
             >
               <i class="bx bx-right-arrow-alt"></i>
             </div>
@@ -686,7 +815,7 @@
         <div class="grid grid-cols-1 gap-[60px] lg:grid-cols-3 mt-5">
           <div class="lg:col-span-2">
             <h4
-              class="text-[22px] lg:text-[24px] text-[#6F7B6ED6] leading-[40px] pb-[30px]"
+              class="text-[18px] md:text-[20px] lg:text-[24px] text-[#6F7B6ED6] leading-[30px] lg:leading-[40px] pb-[30px] testimonyText"
             >
               “My experience with this service was exceptional from start to
               finish. They went above and beyond to make sure I was comfortable
@@ -697,14 +826,14 @@
               recommend”
             </h4>
             <div class="">
-              <h2 class="text-[24px] text-[#000000CC]">David.R</h2>
-              <h4 class="text-[22px] text-[#6F7B6E99]">Software Engineering</h4>
+              <h2 class="text-[24px] text-[#000000CC] testiCustName">David.R</h2>
+              <h4 class="text-[22px] text-[#6F7B6E99] testiCustWork">Software Engineering</h4>
             </div>
           </div>
-          <div class="">
+          <div class="testimonyImgCont">
             <img
               class="w-full h-full object-cover rounded-[15px]"
-              src="/src/assets/images/person2.jpg"
+              src="/src/assets/images/person1.jpg"
               alt="person"
             />
           </div>
@@ -719,13 +848,13 @@
         >
           Frequently Asked Questions
         </h2>
-        <div class="grid grid-cols-1 gap-[50px] lg:grid-cols-2 mt-10">
+        <div class="lg:grid flex flex-col-reverse gap-[50px] lg:grid-cols-2 mt-10">
           <div class="flex flex-col items-start">
-            <div class="h-[450px] w-full rounded-[15px]">
+            <div class="h-[450px] w-full rounded-[15px] overflow-hidden hidden md:flex">
               <img
                 src="/src/assets/images/home-showcase11.jpg"
                 alt="showcase"
-                class="w-full h-full rounded-[15px] object-cover"
+                class="w-full h-full rounded-[15px] object-cover hover:scale-[1.2] imgTrans"
               />
             </div>
 
@@ -743,7 +872,7 @@
                 <div
                   class="flex flex-row justify-between items-center hAccHead font-[700] py-[20px] cursor-pointer"
                 >
-                  <h2 class="text-[20px] lg:text-[24px] text-[#000000E5]">
+                  <h2 class="text-[18px] md:text-[22px] lg:text-[24px] text-[#000000E5]">
                     How do I find the right property?
                   </h2>
                   <div
@@ -768,7 +897,7 @@
                 <div
                   class="flex flex-row justify-between hAccHead font-[700] py-[20px] cursor-pointer"
                 >
-                  <h2 class="text-[20px] lg:text-[24px] text-[#000000E5]">
+                  <h2 class="text-[18px] md:text-[22px] lg:text-[24px] text-[#000000E5]">
                     What is included in the rental cost?
                   </h2>
                   <div
@@ -793,7 +922,7 @@
                 <div
                   class="flex flex-row justify-between hAccHead font-[700] py-[20px] cursor-pointer"
                 >
-                  <h2 class="text-[20px] lg:text-[24px] text-[#000000E5]">
+                  <h2 class="text-[18px] md:text-[22px] lg:text-[24px] text-[#000000E5]">
                     Can I move in with pets?
                   </h2>
                   <div
@@ -818,7 +947,7 @@
                 <div
                   class="flex flex-row justify-between hAccHead font-[700] py-[20px] cursor-pointer"
                 >
-                  <h2 class="text-[20px] lg:text-[24px] text-[#000000E5]">
+                  <h2 class="text-[18px] md:text-[22px] lg:text-[24px] text-[#000000E5]">
                     What is included in the rental cost?
                   </h2>
                   <div
@@ -843,7 +972,7 @@
                 <div
                   class="flex flex-row justify-between hAccHead font-[700] py-[20px] cursor-pointer"
                 >
-                  <h2 class="text-[20px] lg:text-[24px] text-[#000000E5]">
+                  <h2 class="text-[18px] md:text-[22px] lg:text-[24px] text-[#000000E5]">
                     Is renter’s insurance required?
                   </h2>
                   <div
@@ -863,6 +992,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

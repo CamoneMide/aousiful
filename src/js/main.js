@@ -44,6 +44,11 @@ const navTogBtn = document.querySelector(".navTogBtn");
 
 navTogBtn.addEventListener("click", () => {
   navTog.classList.toggle("navTog-show");
+  if (navTog.classList.contains("navTog-show")) {
+    navbar.classList.add("shPStickyTest");
+  } else {
+    navbar.classList.remove("shPStickyTest");
+  }
 });
 
 // ********** fixed navbar ************
@@ -99,4 +104,85 @@ scrollLinks.forEach((link) => {
     // close
     navTog.classList.remove("navTog-show");
   });
+});
+
+// ********** image sliding ************
+const slides = document.querySelectorAll(".imgSlide");
+const abtSlides = document.querySelectorAll(".aboutImgSlide");
+
+slides.forEach((slide, index) => {
+  slide.style.left = `${index * 100}%`;
+});
+abtSlides.forEach((slide, index) => {
+  slide.style.left = `${index * 100}%`;
+});
+
+let currentIndex = 0;
+
+function moveSlide() {
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+  });
+  abtSlides.forEach((slide) => {
+    slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+  });
+}
+function autoPlay() {
+  currentIndex++;
+  if (currentIndex > slides.length - 1) {
+    currentIndex = 0;
+  }
+  moveSlide();
+}
+
+setInterval(autoPlay, 4000);
+
+let showcaseImages = [
+  "/src/assets/images/home-showcase1.jpg",
+  "/src/assets/images/home-showcase13.jpg",
+  "/src/assets/images/home-showcase14.jpg",
+  "/src/assets/images/home-showcase15.jpg",
+  "/src/assets/images/home-showcase16.jpg",
+];
+let aboutImages = [
+  "/src/assets/images/home-showcase2.jpg",
+  "/src/assets/images/home-showcase17.jpg",
+  "/src/assets/images/home-showcase18.jpg",
+  "/src/assets/images/home-showcase19.jpg",
+  "/src/assets/images/home-showcase20.jpg",
+];
+
+// ********** Testimonnail sliding ************
+const testimonyArrow = document.querySelector(".testimonyArrow");
+const testimonyText = document.querySelector(".testimonyText");
+const testimonyImgCont = document.querySelector(".testimonyImgCont");
+const testimonyCustName = document.querySelector(".testiCustName");
+const testimonyCustProfession = document.querySelector(".testiCustWork");
+
+let testimonyTexth4 = [
+  "“My experience with this service was exceptional from start to finish. They went above and beyond to make sure I was comfortable with my choice. The personalized property recommendations, clear lease terms, and support made everything easy. Even renewing my lease was simple and stress free. I feel truly at home here something I haven’t experienced with other rentals. Highly recommend”",
+  "“My journey with this service has been nothing short of outstanding. From the moment I reached out, the team provided tailored recommendations that perfectly matched my needs. The process was transparent, with clear explanations every step of the way. Moving in was seamless, and the ongoing support has been phenomenal. They truly prioritize comfort and satisfaction, making me feel valued as a tenant.”",
+];
+let testimonyImages = [
+  "/src/assets/images/person1.jpg",
+  "/src/assets/images/person2.jpg",
+];
+let testimonyCustNameArr = ["David.R", "Allen.Jr"];
+let testimonyCustWorkArr = ["Software Engineer", "Social Assistant"];
+let testiCurrentIndex = 0;
+testimonyArrow.addEventListener("click", () => {
+  testiCurrentIndex++;
+  if (testiCurrentIndex > testimonyImages.length - 1) {
+    testiCurrentIndex = 0;
+  }
+  testimonyText.innerText = testimonyTexth4[testiCurrentIndex];
+  testimonyCustName.innerText = testimonyCustNameArr[testiCurrentIndex];
+  testimonyCustProfession.innerText = testimonyCustWorkArr[testiCurrentIndex];
+
+  testimonyImgCont.innerHTML = `
+  <img class="w-full h-full object-cover rounded-[15px]"
+        src=${testimonyImages[testiCurrentIndex]}
+        alt="person"
+  />
+  `;
 });

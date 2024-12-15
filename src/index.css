@@ -29,6 +29,13 @@ html {
 .interF {
   font-family: "Inter", sans-serif;
 }
+.mTestoutline {
+  outline: solid red 1px;
+}
+
+.imgTrans {
+  transition: transform 0.5s ease-in-out;
+}
 
 .navLink {
   transition: all ease-in-out 0.3s;
@@ -46,6 +53,14 @@ html {
   z-index: 10;
 }
 
+.shPStickyTest {
+  position: sticky;
+  top: 0;
+  background: #eaf4e8;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
 .navTrans {
   transition: all 0.4s ease-in-out;
 }
@@ -56,6 +71,8 @@ html {
   align-items: center;
   position: absolute;
   inset: 0;
+  right: 34%;
+  top: 87px;
   transition: all 0.4s ease-in-out;
   opacity: 0;
   transform: translate(-100%);
@@ -70,13 +87,15 @@ html {
 }
 
 .hsSearch {
-  background: rgba(228, 240, 219, 0.1);
-  backdrop-filter: blur(20px);
+  background: rgba(228, 240, 219, 0.4);
+  /* background: #e4f0db; */
+  backdrop-filter: blur(60px);
   /* background-image: linear-gradient(
     180deg,
     rgb(228, 240, 219),
     rgba(255, 255, 255, 0.1)
   ); */
+  box-shadow: 5px 5px 10px 0 #00000040;
 }
 
 .hsFootBlur {
