@@ -1,3 +1,12 @@
+// ********** Loader ************
+const loaderContainer = document.querySelector(".tLoaderCont");
+const pageContent = document.querySelector(".tPageCont");
+
+window.addEventListener("load", () => {
+  loaderContainer.classList.add("tLhide");
+  pageContent.classList.add("tPVisisble");
+});
+
 const accordItems = document.querySelectorAll(".shAccordion");
 const scrollers = document.querySelectorAll(".scroller");
 
