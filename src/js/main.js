@@ -50,9 +50,11 @@ function addAnimation() {
 // ********** Toggle navbar ************
 const navTog = document.querySelector(".navTog");
 const navTogBtn = document.querySelector(".navTogBtn");
+const rootElement = document.documentElement;
 
 navTogBtn.addEventListener("click", () => {
   navTog.classList.toggle("navTog-show");
+  rootElement.toggleAttribute("menu-open");
   if (navTog.classList.contains("navTog-show")) {
     navbar.classList.add("shPStickyTest");
   } else {
@@ -63,7 +65,7 @@ navTogBtn.addEventListener("click", () => {
 // ********** fixed navbar ************
 const navbar = document.getElementById("nav");
 const scrollHeight = window.pageYOffset;
-const navHeight = navbar.getBoundingClientRect().height;
+const navHeight = navbar.getBoundingClientRect().height - 4;
 
 // const topLink = document.querySelector(".top-link");
 // navTog.style.top = `${navHeight}px`;
@@ -112,6 +114,7 @@ scrollLinks.forEach((link) => {
     });
     // close
     navTog.classList.remove("navTog-show");
+    rootElement.toggleAttribute("menu-open");
   });
 });
 
@@ -164,7 +167,7 @@ let aboutImages = [
 // ********** Testimonnail sliding ************
 const testimonyArrow = document.querySelector(".testimonyArrow");
 const testimonyText = document.querySelector(".testimonyText");
-const testimonyImgCont = document.querySelector(".testimonyImgCont");
+const testimonyImg = document.querySelector(".testimonyImg");
 const testimonyCustName = document.querySelector(".testiCustName");
 const testimonyCustProfession = document.querySelector(".testiCustWork");
 
@@ -187,11 +190,5 @@ testimonyArrow.addEventListener("click", () => {
   testimonyText.innerText = testimonyTexth4[testiCurrentIndex];
   testimonyCustName.innerText = testimonyCustNameArr[testiCurrentIndex];
   testimonyCustProfession.innerText = testimonyCustWorkArr[testiCurrentIndex];
-
-  testimonyImgCont.innerHTML = `
-  <img class="w-full h-full object-cover rounded-[15px]"
-        src=${testimonyImages[testiCurrentIndex]}
-        alt="person"
-  />
-  `;
+  testimonyImg.src = testimonyImages[testiCurrentIndex];
 });
