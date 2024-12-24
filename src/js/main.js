@@ -115,6 +115,7 @@ scrollLinks.forEach((link) => {
     // close
     navTog.classList.remove("navTog-show");
     rootElement.toggleAttribute("menu-open");
+    navbar.classList.remove("shPStickyTest");
   });
 });
 
@@ -176,8 +177,8 @@ let testimonyTexth4 = [
   "“My journey with this service has been nothing short of outstanding. From the moment I reached out, the team provided tailored recommendations that perfectly matched my needs. The process was transparent, with clear explanations every step of the way. Moving in was seamless, and the ongoing support has been phenomenal. They truly prioritize comfort and satisfaction, making me feel valued as a tenant.”",
 ];
 let testimonyImages = [
-  "/src/assets/images/person1.jpg",
-  "/src/assets/images/person2.jpg",
+  "https://s3-alpha-sig.figma.com/img/34c2/9fcc/13966598d6c681731ab4ae2fb73b6132?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DQf6hncXceTllKEYU7poOujaJSu4cZtY6UWQ-U-Mx9pC6dnkB1qwe5j2VL7sBPA13tYIc1Up~WJd8trZjY5Xdk8h9Bvhan6gXio0FKmdUkpQJePVPv51jA6YwDPNJB~Qlkb6g9CyQGHeBQjlv4d-kYql5Zx4yBau88RR9LpQz7ITyE03g82ycu7fyl5xedx4L2~~k8d2NPqz28~crEEuTAyNWXomDo9vG7VvS5g~T~gQ6qrUQ0YcOtgNGMHrj~Trzixn7zxvfHNyAD2PKHzxsYQ9EtXeUA3QYQmmYTQNAT-aIfhf0SaRWQFykl20e50p7KRQ9Ng7CYRp~nupvBeQ5g__",
+  "https://s3-alpha-sig.figma.com/img/9045/de15/c0ce5d605c4c7b9f3a28b9886ddd4b6f?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z~eygzxqN9mb-hogKTOYajOnhCupGgsqOkwlvQruXm9clgB8mMMioEDqpT02QWdPbBp8TLrYTWwr74-e8Ygk9UF2vaQKbPPvepLWzybb116a4joPq0FrCpYOacrTw-nRq7Ym6SyIX6lX~AqUzQtfA261hrraMhuDWC~hYmLpocYRJELovzerzsOAIgtyjvvLsSJqfrIgd9bdrC7PtBO946ITakSvJ14OKdWUWb1wIqvmOrE9Nm3BjAluQvvyMLs-lNUzT7U5ya5lNloDhPeJYGuyJGTDGc8SeKGlkt87zl1BvRA2yJcIQbAJ0ZIBUPiOxq-t03hIhGROZ867NaCiiA__",
 ];
 let testimonyCustNameArr = ["David.R", "Allen.Jr"];
 let testimonyCustWorkArr = ["Software Engineer", "Social Assistant"];
